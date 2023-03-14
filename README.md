@@ -1,24 +1,107 @@
-# README
+# project handler
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A RESTFUL API built with Ruby on Rails
 
-Things you may want to cover:
+```baseUrl = projecthandler.fly.dev```
 
-* Ruby version
+## get conversations
+request : get
 
-* System dependencies
+```http://projecthandler.fly.dev/projects/:project_id/conversations```
 
-* Configuration
+status: false , means project ongoing
+status: true , means project completed
 
-* Database creation
+## get all users
+request: Get
+http://projecthandler.fly.dev/users
 
-* Database initialization
+## create users
+request: post
+http://projecthandler.fly.dev/users
 
-* How to run the test suite
+body 
+{
+"user_name" : required,
+"name": optional,
+"role": optional,
+"bio": optional
+}
 
-* Services (job queues, cache servers, search engines, etc.)
+## update user info
+Request: patch
+http://projecthandler.fly.dev/users
 
-* Deployment instructions
+body
+any of below
+{
+"user_name" : username,
+"name": optional,
+"role": optional,
+"bio": optional
+}
 
-* ...
+## delete user
+request: delete
+http://projecthandler.fly.dev/users/:user_id
+
+
+## get all projects
+Request: Get
+http://projecthandler.fly.dev/projects
+
+## create project
+Request: post
+http://projecthandler.fly.dev/projects
+body
+{
+user_id: required,
+name: required,
+status: default set at false,
+}
+
+## updated project
+Request: patch
+http://projecthandler.fly.dev/projects
+body
+any of below
+{
+    "user_id": int,
+    "status": boolean,
+    "name": string
+}
+
+## delete project
+request: delete
+http://projecthandler.fly.dev/projects/:project_id
+
+## create comment
+request: post
+http://projecthandler.fly.dev/projects/1/comments
+body 
+{
+"user_id": id,
+"message": "string"
+}
+
+## update comment
+Request: patch
+http://projecthandler.fly.dev/projects/:project_id/comments
+body 
+{
+"message": "string"
+}
+
+## delete comment
+request: delete
+http://projecthandler.fly.dev/projects/:project_id/comments/:comment_id
+
+## Get all comments
+request: get
+http://projecthandler.fly.dev/projects/:project_id/comments
+body 
+{
+"user_id": user_id,
+"message": "string"
+}
+

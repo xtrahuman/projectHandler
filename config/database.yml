@@ -16,10 +16,10 @@
 #
 default: &default
   adapter: postgresql
-  encoding: unicode
-  username: project6
-  password: password
-  host: localhost
+  # encoding: unicode
+  # username: project6
+  # password: password
+  # host: localhost
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -84,6 +84,8 @@ test:
 #
 production:
   <<: *default
-  database: projectHandler_production
-  username: projectHandler
-  password: <%= ENV["PROJECTHANDLER_DATABASE_PASSWORD"] %>
+  #host: projecthandlerdb.internal
+  # database: projectHandler_production
+  # username: projectHandler
+  # password: <%= ENV["PROJECTHANDLER_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
