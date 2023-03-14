@@ -145,12 +145,4 @@ request: get
 
 ```http://projecthandler.fly.dev/projects/:project_id/comments```
 
-body 
-
-```
-{
-"user_id": user_id,
-"message": "string"
-}
-```
 
