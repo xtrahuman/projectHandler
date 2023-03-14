@@ -146,3 +146,12 @@ request: get
 ```http://projecthandler.fly.dev/projects/:project_id/comments```
 
 
+## question i could ask my colleague
+
+- if the userId is needed to view project?
+- would the project be private to certain users or public?
+- if some users would have permission to delete project?
+- when the user is deleted should the comment or project also be deleted?
+- if a project is deleted would the comments be deleted?
+
+
