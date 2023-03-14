@@ -21,12 +21,14 @@ request: post
 ```http://projecthandler.fly.dev/users```
 
 body 
-```{
+```
+{
 "user_name" : required,
 "name": optional,
 "role": optional,
 "bio": optional
-}```
+}
+```
 
 ## update user info
 Request: patch
@@ -34,12 +36,14 @@ Request: patch
 
 body
 any of below
-```{
+```
+{
 "user_name" : username,
 "name": optional,
 "role": optional,
 "bio": optional
-}```
+}
+```
 
 ## delete user
 request: delete
@@ -54,22 +58,26 @@ Request: Get
 Request: post
 ```http://projecthandler.fly.dev/projects```
 body
-```{
+```
+{
 user_id: required,
 name: required,
 status: default set at false,
-}```
+}
+```
 
 ## updated project
 Request: patch
 ```http://projecthandler.fly.dev/projects```
 body
 any of below
-```{
+```
+{
     "user_id": int,
     "status": boolean,
     "name": string
-}```
+}
+```
 
 ## delete project
 request: delete
@@ -79,18 +87,22 @@ request: delete
 request: post
 ```http://projecthandler.fly.dev/projects/1/comments```
 body 
-```{
+```
+{
 "user_id": id,
 "message": "string"
-}```
+}
+```
 
 ## update comment
 Request: patch
 ```http://projecthandler.fly.dev/projects/:project_id/comments```
 body 
-```{
+```
+{
 "message": "string"
-}```
+}
+```
 
 ## delete comment
 request: delete
@@ -100,8 +112,10 @@ request: delete
 request: get
 ```http://projecthandler.fly.dev/projects/:project_id/comments```
 body 
-```{
+```
+{
 "user_id": user_id,
 "message": "string"
-}```
+}
+```
 
