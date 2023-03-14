@@ -156,7 +156,7 @@ request: get
 
 ## answer i could recieve
 
-- userid not need to view project
+- userid not needed to view project
 - user with an id can create project and comment
 - when user is deleted the project and comment is deleted
 - when project is deleted the comments also get deleted
