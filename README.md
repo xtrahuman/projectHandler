@@ -36,7 +36,7 @@ body
 
 ## update user info
 Request: patch
-```http://projecthandler.fly.dev/users```
+```http://projecthandler.fly.dev/users/:user_id```
 
 body
 
@@ -84,7 +84,7 @@ status: default set at false,
 
 Request: patch
 
-```http://projecthandler.fly.dev/projects```
+```http://projecthandler.fly.dev/projects/:project_id```
 
 body
 
@@ -123,7 +123,7 @@ body
 
 Request: patch
 
-```http://projecthandler.fly.dev/projects/:project_id/comments```
+```http://projecthandler.fly.dev/projects/:project_id/comments/:comment_id```
 
 body
 
