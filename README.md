@@ -25,7 +25,7 @@ deployed ```baseUrl = projecthandler.fly.dev```
 
 request : get
 
-```http://projecthandler.fly.dev/projects/:project_id/conversations```
+```https://projecthandler.fly.dev/projects/:project_id/conversations```
 
 ```status: false , means project ongoing```
 ```status: true , means project completed```
@@ -34,11 +34,11 @@ request : get
 
 request: Get
 
-```http://projecthandler.fly.dev/users```
+```https://projecthandler.fly.dev/users```
 
 ## create users
 request: post
-```http://projecthandler.fly.dev/users```
+```https://projecthandler.fly.dev/users```
 
 body 
 
@@ -53,7 +53,7 @@ body
 
 ## update user info
 Request: patch
-```http://projecthandler.fly.dev/users/:user_id```
+```https://projecthandler.fly.dev/users/:user_id```
 
 body
 
@@ -72,20 +72,20 @@ any of below
 
 request: delete
 
-```http://projecthandler.fly.dev/users/:user_id```
+```https://projecthandler.fly.dev/users/:user_id```
 
 
 ## get all projects
 
 Request: Get
 
-```http://projecthandler.fly.dev/projects```
+```https://projecthandler.fly.dev/projects```
 
 ## create project
 
 Request: post
 
-```http://projecthandler.fly.dev/projects```
+```https://projecthandler.fly.dev/projects```
 
 body
 
@@ -101,7 +101,7 @@ status: default set at false,
 
 Request: patch
 
-```http://projecthandler.fly.dev/projects/:project_id```
+```https://projecthandler.fly.dev/projects/:project_id```
 
 body
 
@@ -119,13 +119,13 @@ any of below
 
 request: delete
 
-```http://projecthandler.fly.dev/projects/:project_id```
+```https://projecthandler.fly.dev/projects/:project_id```
 
 ## create comment
 
 request: post
 
-```http://projecthandler.fly.dev/projects/1/comments```
+```https://projecthandler.fly.dev/projects/:project_id/comments```
 
 body 
 
@@ -140,7 +140,7 @@ body
 
 Request: patch
 
-```http://projecthandler.fly.dev/projects/:project_id/comments/:comment_id```
+```https://projecthandler.fly.dev/projects/:project_id/comments/:comment_id```
 
 body
 
@@ -154,13 +154,13 @@ body
 
 request: delete
 
-```http://projecthandler.fly.dev/projects/:project_id/comments/:comment_id```
+```https://projecthandler.fly.dev/projects/:project_id/comments/:comment_id```
 
 ## Get all comments
 
 request: get
 
-```http://projecthandler.fly.dev/projects/:project_id/comments```
+```https://projecthandler.fly.dev/projects/:project_id/comments```
 
 
 ## question i could ask my colleague
