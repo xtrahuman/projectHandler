@@ -2,7 +2,24 @@
 
 A RESTFUL API built with Ruby on Rails
 
-```baseUrl = projecthandler.fly.dev```
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+- copy this link `https://github.com/xtrahuman/projectHandler.git`.
+- get the directory that you want to clone the repository.
+- open the command prompt in this directory.
+- write `git clone https://github.com/xtrahuman/projectHandler.git`.
+- go to the repository folder in your command prompt.
+- run `bundle install`.
+- fill up your exiting postgres password and username in database.yml, for access to your postgres. advisable to use environment variable
+- create database `rails db:create`
+- Migrate database `rails db:migrate`
+- type `rails s -p 3003` to start up server
+- replace baseUrl with `http://127.0.0.1:3003`
+
+deployed ```baseUrl = projecthandler.fly.dev```
 
 ## get conversations
 

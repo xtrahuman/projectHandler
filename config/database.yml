@@ -16,7 +16,7 @@
 #
 default: &default
   adapter: postgresql
-  # encoding: unicode
+  encoding: unicode
   # username: project6
   # password: password
   # host: localhost
@@ -84,7 +84,7 @@ test:
 #
 production:
   <<: *default
-  #host: projecthandlerdb.internal
+  # host: projecthandlerdb.internal
   # database: projectHandler_production
   # username: projectHandler
   # password: <%= ENV["PROJECTHANDLER_DATABASE_PASSWORD"] %>
